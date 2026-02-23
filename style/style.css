@@ -74,6 +74,10 @@
     background-size: cover;
 }
 
+.banner-content-img img {
+    width: 100%;
+}
+
 /* brand- img section start here */
 .brand-imgs {
     max-width: 1110px;
@@ -210,4 +214,29 @@ h5 {
 i {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* responsive media section mobile */
+@media screen and (max-width:576px) {
+
+    .nav-bar,
+    .nav-links,
+    .banner-section,
+    .Featured-products {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .brand-img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    .popular-card-items {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
 }
